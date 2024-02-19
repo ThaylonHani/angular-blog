@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:var(--second-color) ;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+div img {
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+}
+header h1 {
+  font-size:1rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+header h1:hover {
+  color: var(--third-color);
+}

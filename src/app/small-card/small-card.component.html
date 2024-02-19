@@ -1,0 +1,13 @@
+<ul>
+  <li *ngFor="let item of items">
+    <section>
+      <h2>
+        {{item.name}}
+      </h2>
+      <img src={{item.url}} alt="Imagem do projeto">
+    </section>
+    <p>
+      {{item.description}}
+    </p>
+  </li>
+</ul>

@@ -1,0 +1,20 @@
+
+.container-title {
+  width: 100vw;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--second-color);
+  padding: 1rem 0 ;
+  border-bottom: 2px solid var(--third-color);
+  border-top: 2px solid var(--third-color);
+  margin: 1rem 0;
+}
+.container-title h1 {
+    font-size: 5rem;
+}
+.container-title p {
+  color: var(--third-color);
+}
