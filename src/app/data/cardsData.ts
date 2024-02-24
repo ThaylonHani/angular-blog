@@ -49,11 +49,3 @@ export const cardsData = [
     type: 'newCard'
   }
 ];
-
-export const newCardsData = [
-
-];
-
-export const bigCardsData = [
-
-]
