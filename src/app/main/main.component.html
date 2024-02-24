@@ -2,7 +2,12 @@
 <main class="main">
 <app-title/>
 <div>
-  <app-big-card/>
-  <app-small-card/>
+  <section>
+    <app-big-card Id="3"/>
+  </section>
+  <section class="small-cards">
+
+    <app-small-card *ngFor="let card of cards" Id={{card.id}}/>
+  </section>
 </div>
 </main>

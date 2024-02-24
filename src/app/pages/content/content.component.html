@@ -1,0 +1,19 @@
+<body>
+  <div class="container-content">
+    <a href="javascript:history.go(-1)" class="btn-back"> Voltar </a>
+    <h1 id="content-title">
+      {{ card[0].name }}
+    </h1>
+    <div class="container-card">
+      <img src="{{ card[0].url }}" alt="" />
+      <p id="content-description">
+        {{ card[0].description }}
+      </p>
+    </div>
+    <div class="container-new">
+      <app-new-card Id="4" />
+      <app-new-card Id="5" />
+      <app-new-card Id="6" />
+    </div>
+  </div>
+</body>

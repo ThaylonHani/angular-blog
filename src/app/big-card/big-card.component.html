@@ -1,9 +1,11 @@
+<a href="/content/{{bigCard[0].id}}" *ngIf="bigCard.length !== 0">
 <div class="big-card">
   <h1>
-    Projeto maior para curiosos
+   {{bigCard[0].name}}
   </h1>
-  <img src="../../assets/prog-header.jpg" alt="Imagem do projeto maior">
+  <img src="{{bigCard[0].url}}" alt="Imagem do projeto maior">
   <p>
-    Tu é um curioso de plantão né pode confessar
+    {{bigCard[0].description}}
   </p>
 </div>
+</a>

@@ -1,0 +1,46 @@
+.container-newCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 40vw;
+  height: 20vh;
+}
+.container-newCard img {
+  width:100px
+}
+
+a{
+  color: inherit;
+  text-decoration: none
+}
+
+.card-content:hover{
+  transform: scale(1.05)
+}
+
+.container-newCard h3 {
+  position: relative;
+  color: var(--third-color)
+}
+
+.container-newCard h3::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--forty-color);
+  transition: all 0.2s linear;
+}
+.container-newCard:hover h3::after {
+  width: 100%;
+}
+.container-newCard p {
+  max-width: 90%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

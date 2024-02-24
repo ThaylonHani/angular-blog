@@ -1,25 +1,21 @@
-
-ul {
+.container-card {
   display: flex;
-  flex-direction: row;
-  flex-shrink: 2;
-  flex-grow: 2;
-  align-self: center;
-  flex-wrap: wrap;
+  width: 70vw;
   justify-content: center;
   align-items: center;
-  list-style: none;
-  gap: 1rem;
-  max-width: 100vw;
-  overflow: hidden;
+  align-self: center;
 }
-li {
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.card-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  max-width: 48%;
+  max-width: 100%;
   width: 100%;
   padding: 0.2rem;
   overflow: hidden;
@@ -27,43 +23,51 @@ li {
   transition: all 0.2s linear;
   cursor: pointer;
 }
-
-li section {
+.card-content section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
   height: 100%;
+  gap: 0.3rem;
 }
 
-li section h2 {
+.card-content section h2 {
   color: var(--third-color);
+  max-width: 90%;
+  font-size: 1rem;
+  text-align: center;
   position: relative;
-}
-
-li section img {
-  max-width: 80%;
-  width: 100%;
-  height: 200px;
-  border-radius: 1rem;
-  color: var(--second-color);
-  text-align: center;
-}
-li p {
-  color: var(--second-color);
-  max-width: 100%;
-  width: 100%;
-  text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-li:hover{
+.card-content section img {
+  max-width: 70%;
+  border-radius: 1rem;
+  color: var(--second-color);
+  text-align: center;
+}
+
+
+.card-content p {
+  color: var(--second-color);
+  max-width: 90%;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 1rem;
+  text-overflow: ellipsis;
+}
+
+.card-content:hover{
   transform: scale(1.05)
 }
-li h2::after{
+
+.card-content h2::after{
   content: '';
   position: absolute;
   left: 0;
@@ -73,39 +77,6 @@ li h2::after{
   background-color: var(--forty-color);
   transition: all 0.2s linear;
 }
-li:hover h2::after {
+.card-content:hover h2::after {
   width: 100%;
-}
-
-
-@media screen and (min-width: 768px) {
-  ul{
-    display: flex;
-    width: 50vw;
-    max-height: 40vh;
-    gap:1rem;
-    justify-content: center;
-    overflow-y: auto;
-  }
-  li {
-    max-width: 45%;
-    max-height: 60%;
-    height: 100%;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  li section h2 {
-    font-size: small;
-    text-align: center;
-  }
-  li section {
-    flex-direction: column;
-    justify-content: space-between;
-    height: 50%;
-    width: 50%;
-  }
-  li section img {
-    height: 100%;
-    height: 100%;
-  }
 }

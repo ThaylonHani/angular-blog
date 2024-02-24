@@ -6,8 +6,8 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 1rem;
-  max-width: 90%;
-  width: 90%;
+  max-width: 100vw;
+  width: 100%;
   padding: 0.5rem;
   overflow: hidden;
   gap: 0.5rem;
@@ -15,9 +15,18 @@
   text-align: center;
   cursor: pointer;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 .big-card h1 {
   color: var(--third-color);
+  max-width: 90%;
+  text-align: center;
   position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .big-card img {
   max-width: 80%;
@@ -53,19 +62,4 @@
 .big-card:hover h1::after {
   width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .big-card {
-    max-width: 100%;
-    width: 100%;
-  }
-  .big-card h1 {
-    font-size: 1rem;
-  }
-  .big-card img {
-    width: 500px;
-  }
-  .big-card p {
-    height: 100%;
-    white-space: inherit;
-  }
-}
+

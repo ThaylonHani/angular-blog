@@ -28,3 +28,8 @@ header h1 {
 header h1:hover {
   color: var(--third-color);
 }
+
+header a {
+  color: inherit;
+  text-decoration: none;
+}

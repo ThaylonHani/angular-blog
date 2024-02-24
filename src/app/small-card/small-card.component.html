@@ -1,13 +1,15 @@
-<ul>
-  <li *ngFor="let item of items">
-    <section>
-      <h2>
-        {{item.name}}
-      </h2>
-      <img src={{item.url}} alt="Imagem do projeto">
-    </section>
-    <p>
-      {{item.description}}
-    </p>
-  </li>
-</ul>
+  <a href="/content/{{items[0].id}}" *ngIf="items.length !== 0;" >
+    <div class="container-card">
+      <div class="card-content">
+        <section>
+          <h2>
+            {{items[0].name}}
+          </h2>
+          <img src={{items[0].url}} alt="Imagem do projeto">
+        </section>
+        <p>
+          {{items[0].description}}
+        </p>
+      </div>
+    </div>
+  </a>
